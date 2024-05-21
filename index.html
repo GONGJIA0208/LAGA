@@ -120,7 +120,7 @@
 
 <html>
 <head>
-	<title>HMDiff</title>
+	<title>LAGA</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Creative and Descriptive Paper Title." />
 	<meta property="og:description" content="Paper description." />
@@ -140,10 +140,20 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Distribution-Aligned Diffusion for Human Mesh Recovery</span>
+		<span style="font-size:36px">LAGA: Layered 3D Avatar Generation and Customization via Gaussian Splatting</span>
 		<table align=center width=800px>
 			<table align=center width=800px>
 				<tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:22px"><sup>1</sup><a href="https://scholar.google.com/citations?user=ZV-ThegAAAAJ&hl=zh-CN">JIA GONG</a,/b><sup>*</sup>,</span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:22px"><sup>1</sup><a href="">Shengyu Ji</b><sup>*</sup>,</span>
+						</center>
+					</td>
 					<td align=center width=100px>
 						<center>
 							<span style="font-size:22px"><sup>1</sup><a href="https://scholar.google.com/citations?user=BDEOhasAAAAJ&hl=zh-CN&oi=ao">Lin Geng Foo</a>,</span>
@@ -151,12 +161,12 @@
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:22px"><sup>1</sup><a href="https://scholar.google.com/citations?user=ZV-ThegAAAAJ&hl=zh-CN">JIA GONG</a>,</span>
+							<span style="font-size:22px"><sup>1</sup><a href="https://scholar.google.com.sg/citations?user=Xs5BIogAAAAJ&hl=en&oi=ao">Kang Chen</b>,</span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:22px"><sup>2</sup><a href="https://scholar.google.com/citations?user=zFyT_gwAAAAJ&hl=zh-CN">Hossein Rahmani</a>,</span>
+							<span style="font-size:22px"><sup>2</sup><a href="https://scholar.google.com/citations?user=zFyT_gwAAAAJ&hl=zh-CN">Hossein Rahmani</c>,</span>
 						</center>
 					</td>
 					<td align=center width=100px>
@@ -176,13 +186,25 @@
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><sup>2</sup>Lancaster University</span>
+							<span style="font-size:24px"><sup>2</sup>Netease</span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><sup>3</sup>Lancaster University</span>
 						</center>
 					</td>
 				</tr>
 			</table>
 
 			<table align=center width=800px>
+				<tr>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><sup>*</sup>equal contribution</span>
+						</center>
+					</td>
+				</tr>
 				<tr>
 					<td align=center width=100px>
 						<center>
@@ -229,7 +251,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-			Creating and customizing a 3D clothed avatar from textual descriptions is a critical and challenging task. Traditional methods often treat the human body and clothing as inseparable, limiting users' ability to freely mix and match garments. In response to this limitation, we present LAyered Gaussian Avatar ({LAGA), a carefully designed framework enabling the creation of high-fidelity decomposable avatars with diverse garments. By decoupling garments from avatar, our framework empowers users to conviniently edit avatars at the garment level. Our approach begins by modeling the avatar using a set of Gaussian points organized in a layered structure, where each layer corresponds to a specific garment or the human body itself. To generate high-quality garments for each layer, we introduce a coarse-to-fine strategy for diverse garment generation and a novel dual-SDS loss function to maintain coherence between the generated garments and avatar components, including the human body and other garments. Moreover, we introduce three regularization losses to guide the movement of Gaussians for garment transfer, allowing garments to be freely transferred to various avatars. Extensive experimentation demonstrates that our approach surpasses existing methods in the generation of 3D clothed humans.
+			Creating and customizing a 3D clothed avatar from textual descriptions is a critical and challenging task. Traditional methods often treat the human body and clothing as inseparable, limiting users' ability to freely mix and match garments. In response to this limitation, we present LAyered Gaussian Avatar (LAGA), a carefully designed framework enabling the creation of high-fidelity decomposable avatars with diverse garments. By decoupling garments from avatar, our framework empowers users to conviniently edit avatars at the garment level. Our approach begins by modeling the avatar using a set of Gaussian points organized in a layered structure, where each layer corresponds to a specific garment or the human body itself. To generate high-quality garments for each layer, we introduce a coarse-to-fine strategy for diverse garment generation and a novel dual-SDS loss function to maintain coherence between the generated garments and avatar components, including the human body and other garments. Moreover, we introduce three regularization losses to guide the movement of Gaussians for garment transfer, allowing garments to be freely transferred to various avatars. Extensive experimentation demonstrates that our approach surpasses existing methods in the generation of 3D clothed humans.
 			</td>
 		</tr>
 	</table>
